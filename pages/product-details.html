@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/9a97334ce7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="" width="80" height="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >หน้าหลัก</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">กำลังฮิต</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">ลดราคา</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">ผู้ชาย</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link">ผู้หญิง</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link active" href="./shop.html">ดูทั้งหมด</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+            <a href="./shopping-cart.html" class="shopping-cart ms-5">
+              <i class="fa-solid fa-2xl fa-bag-shopping">
+                <span class="cart-number">0</span>
+              </i>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container mt-4 p-5">
+      <div class="row">
+        <div class="col-lg-7">
+          <div>
+            <img src="../images/product-1.jpg" alt="" width="100%" />
+          </div>
+          <div class="d-flex">
+            <img src="../images/product-2.jpg" alt="" width="60%" />
+            <img src="../images/product-3.jpg" alt="" width="40%" />
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div>
+            <h1>คำอธิบาย</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              nulla repellendus qui dolores corrupti, odit maiores. Omnis,
+              distinctio voluptatem corrupti nihil minima eos ea animi ullam
+              iusto deserunt repellendus eligendi et mollitia suscipit in ipsa
+              atque. Corporis, distinctio, architecto ullam cupiditate quaerat
+              accusantium labore adipisci amet, minus exercitationem at. Modi ea
+              fuga amet beatae reprehenderit, perspiciatis adipisci dignissimos
+              exercitationem facilis eaque temporibus odit, non saepe dolore
+              blanditiis. Perspiciatis, amet. Totam reiciendis quo quaerat
+              perferendis quibusdam delectus eaque, expedita saepe labore natus
+              excepturi quia ea. Saepe officia exercitationem neque amet
+              expedita deserunt maxime! Id, officia illum quaerat quia eos ad
+              ipsam.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h1>สี</h1>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+          <div class="mt-5">
+            <h1>ไซส์</h1>
+            <button type="button" class="btn btn-outline-primary">7</button>
+            <button type="button" class="btn btn-outline-secondary">8</button>
+            <button type="button" class="btn btn-outline-success">9</button>
+            <button type="button" class="btn btn-outline-danger">10</button>
+          </div>
+          <div class="mt-5">
+            <button type="button" class="btn btn-dark" style="width: 100%">
+              เพิ่มลงตระกร้า
+            </button>
+          </div>
+          <div class="mt-5">
+            <h1>รีวิว</h1>
+            <div class="card-body p-4">
+              <div
+                class="d-flex flex-start flex-lg-row align-items-lg-start flex-column align-items-center"
+              >
+                <img
+                  class="rounded-circle shadow-1-strong me-3"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(26).webp"
+                  alt="avatar"
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Lara Stewart</h6>
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="mb-0">
+                      March 15, 2021
+                      <span class="badge bg-success">Approved</span>
+                    </p>
+                    <a href="#!" class="link-muted"
+                      ><i class="fas fa-pencil-alt ms-2"></i
+                    ></a>
+                    <a href="#!" class="text-success"
+                      ><i class="fas fa-redo-alt ms-2"></i
+                    ></a>
+                    <a href="#!" class="link-danger"
+                      ><i class="fas fa-heart ms-2"></i
+                    ></a>
+                  </div>
+                  <p class="mb-0">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through
+                    the cites.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-start flex-lg-row align-items-lg-start flex-column align-items-center mt-5"
+              >
+                <img
+                  class="rounded-circle shadow-1-strong me-3"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(27).webp"
+                  alt="avatar"
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <h6 class="fw-bold mb-1">Lara Stewart</h6>
+                  <div class="d-flex align-items-center mb-3">
+                    <p class="mb-0">
+                      March 15, 2021
+                      <span class="badge bg-success">Approved</span>
+                    </p>
+                    <a href="#!" class="link-muted"
+                      ><i class="fas fa-pencil-alt ms-2"></i
+                    ></a>
+                    <a href="#!" class="text-success"
+                      ><i class="fas fa-redo-alt ms-2"></i
+                    ></a>
+                    <a href="#!" class="link-danger"
+                      ><i class="fas fa-heart ms-2"></i
+                    ></a>
+                  </div>
+                  <p class="mb-0">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through
+                    the cites.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container mt-5 pt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="" width="80" height="60" />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">หน้าหลัก</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">เกี่ยวกับเรา</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">นโยบาย</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">ติดต่อ</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

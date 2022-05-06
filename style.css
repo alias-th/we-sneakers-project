@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;600;700&display=swap");
+
+/* Initial Setting */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Krub", sans-serif;
+}
+
+/* Custom Bootstrap */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.w-100 {
+  margin: 0 auto;
+  max-width: 80vw !important;
+  height: 70vh;
+  object-fit: cover;
+}
+
+h5 {
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+
+/* Expanding Cards */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.expanding-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  color: white;
+  cursor: pointer;
+  /* *คีย์ที่ทำให้รูปเล็ก */
+  flex: 0.5;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+  /* *transition flex ให้ลื่น */
+  transition: flex 0.7s ease-in;
+}
+
+.panel h2 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+/* จับ 2 class*/
+.panel.click-active {
+  /* เมื่อ active จะเพิ่ม flex */
+  flex: 6;
+}
+
+.panel.click-active h2 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* testimonial */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.testimonial-container {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-quote {
+  font-size: 28px;
+  position: absolute;
+  top: 50px;
+}
+
+.fa-quote-right {
+  right: 15px;
+  top: 150px;
+}
+
+.fa-quote-left {
+  left: 15px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: black !important;
+  height: 6px;
+  width: 100%;
+  /* linear คือกำหนดให้ความเร็วเท่ากัน */
+  animation: grow 5s linear infinite;
+  /* เริ่มที่ซ้าย */
+  transform-origin: left;
+}
+
+@keyframes grow {
+  /* สั่งให้ขยายออกเป็นแนวนอน จาก 0 ไป 100 */
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+/* shop */
+.category-shop a {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.shopping-cart {
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.shopping-cart span {
+  position: absolute;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  top: 0;
+}
+
+.img-card {
+  object-fit: cover;
+  height: 250px;
+}
+
+@media screen and (max-width: 1500px) {
+  .img-card {
+    height: 200px;
+  }
+  .card {
+    font-size: 12px;
+    min-width: 150px !important;
+    min-height: 150px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+  .fa-quote {
+    display: none;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .expanding-cards {
+    max-width: 80vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+
+  .w-100 {
+    width: 100% !important;
+    height: 40vh;
+  }
+}
